@@ -1,21 +1,12 @@
 <?php
-
-//connexion PDO
-  $db_host = 'localhost';
-  $db_user = 'root';
-  $db_password = 'root';
-  $db_db = 'projetBackend';
-  $db_port = 8889;
-
-  $mysqli = new mysqli(
-    $db_host,
-    $db_user,
-    $db_password,
-    $db_db
-  );
-
-  $mysqli->close();
-
+  try//connexion à la bdd
+  {
+    $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
+  }
+  catch(Exception $e)
+  {
+    die("Une erreur s'est produite.");
+  }
 //variable d'affichage etc. 
 
 //constantes système 
