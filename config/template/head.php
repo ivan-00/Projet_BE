@@ -14,5 +14,6 @@ require 'config/init.php';
     <link rel="stylesheet" href="asset/style/style.css">
 </head>
 
+<nav></nav>
 <body>
-    <div class="container">
+    

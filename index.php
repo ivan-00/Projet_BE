@@ -1,4 +1,6 @@
 <?php include 'config/template/head.php'; ?>
+
+
 <header>
     <?php include 'config/template/nav.php'; ?>
 </header>
