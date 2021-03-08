@@ -7,16 +7,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   a,
   i {
     color: white;
     font-family: "roboto", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
   }
   .nav-logo {
     font-family: "roboto", sans-serif;
-    font-size: 43px;
+    font-size: 40px;
     font-weight: bolder;
     color: $text-logo;
   }
@@ -31,13 +30,15 @@ nav {
       border: none;
       border-radius: 10px 0 0 10px;
       padding-left: 30px;
+      background-color: #c9c9c9;
     }
     input:focus {
       outline: none;
+      color: $text-green;
     }
     button {
       border: none;
-      background-color: white;
+      background-color: #c9c9c9;
       border-radius: 0 10px 10px 0;
       cursor: pointer;
     }
@@ -52,5 +53,37 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+    font-weight: normal;
+  }
+  .nav-compte {
+    display: flex;
+    justify-content: space-between;
+    i {
+      font-size: 30px;
+      width: 100%;
+    }
+    .panier {
+      margin-right: 20px;
+    }
+    .panier a i,
+    .compte a i {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+// Hover
+nav {
+  .nav-item a:hover {
+    color: $text-green;
+    transition: 0.2s;
+  }
+  .nav-compte {
+    .panier:hover a i,
+    .compte:hover a i {
+      color: $text-green;
+      transition: 0.2s;
+    }
   }
 }

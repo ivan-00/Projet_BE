@@ -49,12 +49,12 @@ nav a,
 nav i {
   color: white;
   font-family: "roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 nav .nav-logo {
   font-family: "roboto", sans-serif;
-  font-size: 43px;
+  font-size: 40px;
   font-weight: bolder;
   color: #10331c;
 }
@@ -74,15 +74,17 @@ nav form input {
   border: none;
   border-radius: 10px 0 0 10px;
   padding-left: 30px;
+  background-color: #c9c9c9;
 }
 
 nav form input:focus {
   outline: none;
+  color: #277c45;
 }
 
 nav form button {
   border: none;
-  background-color: white;
+  background-color: #c9c9c9;
   border-radius: 0 10px 10px 0;
   cursor: pointer;
 }
@@ -99,9 +101,53 @@ nav .nav-item {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 15px;
+  font-weight: normal;
 }
 
 nav .nav-item a {
   font-size: 18px;
+}
+
+nav .nav-compte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-compte i {
+  font-size: 30px;
+  width: 100%;
+}
+
+nav .nav-compte .panier {
+  margin-right: 20px;
+}
+
+nav .nav-compte .panier a i,
+nav .nav-compte .compte a i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .nav-item a:hover {
+  color: #277c45;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+nav .nav-compte .panier:hover a i,
+nav .nav-compte .compte:hover a i {
+  color: #277c45;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 /*# sourceMappingURL=style.css.map */
