@@ -18,7 +18,11 @@
         </ul>
     </div>
         <div class="nav-compte">
-            <a href="/Projet_back-end/Projet_BE/page/panier.php"><i class="fas fa-shopping-cart"></i>Panier</a>
-            <a href="/Projet_back-end/Projet_BE/page/login.php"> <i class="fas fa-user"></i> Compte client</a>
+            <div class="panier">
+                <a href="/Projet_back-end/Projet_BE/page/panier.php"><i class="fas fa-shopping-cart"></i>Panier</a>
+            </div>
+            <div class="compte">
+                <a href="/Projet_back-end/Projet_BE/page/login.php"> <i class="fas fa-user"></i> Compte client</a>
+            </div>
         </div>
 </nav>
