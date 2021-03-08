@@ -3,15 +3,105 @@ h1,
 h2,
 h3,
 h4,
-a {
+a,
+li,
+ul,
+body {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+  list-style-type: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
 }
 
 nav {
   background-color: rgba(128, 128, 128, 0.363);
-  height: 128px;
+  height: 90px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a,
+nav i {
+  color: white;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+}
+
+nav .nav-logo {
+  font-family: "roboto", sans-serif;
+  font-size: 43px;
+  font-weight: bolder;
+  color: #10331c;
+}
+
+nav form {
+  width: 720px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav form input {
+  width: 100%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding-left: 30px;
+}
+
+nav form input:focus {
+  outline: none;
+}
+
+nav form button {
+  border: none;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+nav form .fa {
+  color: #277c45;
+}
+
+nav .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+nav .nav-item a {
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

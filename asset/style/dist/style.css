@@ -1,0 +1,12 @@
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
