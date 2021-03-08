@@ -1,0 +1,56 @@
+@import "_reset.scss";
+nav {
+  background-color: rgba(128, 128, 128, 0.363);
+  height: 90px;
+  padding: 15px;
+  // flex
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a,
+  i {
+    color: white;
+    font-family: "roboto", sans-serif;
+    font-size: 20px;
+  }
+  .nav-logo {
+    font-family: "roboto", sans-serif;
+    font-size: 43px;
+    font-weight: bolder;
+    color: $text-logo;
+  }
+  form {
+    width: 720px;
+    height: 40px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    input {
+      width: 100%;
+      border: none;
+      border-radius: 10px 0 0 10px;
+      padding-left: 30px;
+    }
+    input:focus {
+      outline: none;
+    }
+    button {
+      border: none;
+      background-color: white;
+      border-radius: 0 10px 10px 0;
+      cursor: pointer;
+    }
+    .fa {
+      color: $text-green;
+    }
+  }
+  .nav-item {
+    a {
+      font-size: 18px;
+    }
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+}
