@@ -1,7 +1,6 @@
 @import "_reset.scss";
 nav {
   background-color: rgba(128, 128, 128, 0.363);
-  height: 90px;
   padding: 15px;
   // flex
   display: flex;
@@ -15,7 +14,7 @@ nav {
   }
   .nav-logo {
     font-family: "roboto", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
     color: $text-logo;
   }

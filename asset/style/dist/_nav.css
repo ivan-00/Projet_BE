@@ -12,11 +12,11 @@ body {
   text-decoration: none;
   list-style: none;
   list-style-type: none;
+  font-family: "note sans", sans-serif;
 }
 
 nav {
   background-color: rgba(128, 128, 128, 0.363);
-  height: 90px;
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -30,7 +30,7 @@ nav i {
 }
 nav .nav-logo {
   font-family: "roboto", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bolder;
   color: #10331c;
 }
