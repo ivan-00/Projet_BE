@@ -1,5 +1,5 @@
 <?php
-include '/Projet_back-end/Projet_BE/config/template/head.php';
+include '../Projet_BE/config/template/head.php';
 require '../config/init.php';
 ?>
 
