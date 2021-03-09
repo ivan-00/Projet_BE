@@ -11,4 +11,4 @@
 
 //constantes système 
 
-require 'function.php';
+require './function.php';
