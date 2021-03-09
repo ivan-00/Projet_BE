@@ -1,15 +1,20 @@
 <?php
     include 'Propjet_BE/config/template/head.php';
-?>
+    include '/Projet_BE/config/init.php';
+?> 
+
 <nav>
     <a class="nav-logo" href="">
         CBD HACE
     </a>
     <div class="nav-item-center">
-    <form action="" class="formulaire">
-        <input class="champ" type="text" placeholder ="Rechercher un produit"/>
-        <button type="submit"><i class="fa fa-search"></i></button>
+    <form action="/Projet_back-end/Projet_BE/page/recherche.php" class="formulaire" method="post">
+        <input class="champ" name="query" type="search" id="search-product" placeholder ="Rechercher un produit"/>
+        <button type="submit" name="search"><i class="fa fa-search"></i></button>
     </form>
+    <?php
+        echo $resultats;
+    ?>
         <ul class="nav-item">
             <li><a href="/Projet_back-end/Projet_BE/categorie/fleur.php">Fleur CBD</a></li>
             <li><a href="/Projet_back-end/Projet_BE/categorie/vaporette.php">Nos Vaporisateur / E-Cigarette</a></li>
