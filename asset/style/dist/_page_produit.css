@@ -1,0 +1,107 @@
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+.banner {
+  padding: 50px 40px;
+  height: 250px;
+}
+.banner h1 {
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.banner p {
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: 25px;
+}
+
+.banner_fleur {
+  background-image: url(img/banner_fleur.png);
+  background-size: cover;
+  background-position-y: 570px;
+}
+
+.banner_huile {
+  background-image: url(img/banner_huile.jpeg);
+  background-size: cover;
+  background-position-y: 570px;
+}
+
+.banner_vaporette {
+  background-image: url(img/banner_cigarette.jpeg);
+  background-size: cover;
+  background-position-y: 820px;
+}
+
+.banner_documentation {
+  background-image: url(img/banner_documentation.jpeg);
+  background-size: cover;
+  background-position-y: 650px;
+}
+
+.list_produit {
+  padding: 40px 60px 0 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tuile {
+  display: flex;
+  margin-bottom: 70px;
+}
+.tuile .image_produit {
+  width: 280px;
+  height: 227px;
+  margin-bottom: 30px;
+}
+.tuile h2 {
+  font-size: 19px;
+  font-weight: normal;
+  text-align: center;
+}
+.tuile .titre_prix {
+  font-size: 9px;
+  text-align: center;
+  font-weight: inherit;
+}
+.tuile .prix {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section_article {
+  padding: 0 60px;
+}
+.section_article h3 {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  color: #707070;
+}
+.section_article p {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #707070;
+}
