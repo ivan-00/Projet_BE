@@ -15,4 +15,3 @@ if ($reponse = $produit->fetch()) {?>
     echo 'aucun produit trouvé';
   }
   ?>
-
