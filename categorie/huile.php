@@ -7,7 +7,8 @@ include '../config/template/nav.php';
 ?>
 <div class="banner banner_huile">
   <h1>Nos Huiles</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vitae pariatur animi itaque officiis dolore fugit ipsum soluta eum? Molestiae rem minus, velit accusamus consequatur beatae sequi eligendi esse officia!</p>
+  <p>Les huiles CBD permettent à chacun de renouveler sa consommation, sans aucune agression pour son corps. Il est en effet possible de consommer de l’huile enrichie en CBD de multiples façons créatives et saines. Découvrez nos huiles à spectre complet à teneur 40 % CBD, 100 % légales. Elles sont adaptées aux consommateurs réguliers et avertis qui ressentent le besoin d’intensifier le dosage. <br> <br>
+  Fleuron de la Gamme Le Lab, notre huile à 40 % de CBD a fait l’objet de nombreux tests avant de vous être proposée pour assurer votre entière satisfaction. Elle dispose de toutes les accréditations nécessaires à garantir sa légalité ainsi que sa sécurité pour votre bien-être.</p>
 </div>
 <div class="list_produit">
   <?php
