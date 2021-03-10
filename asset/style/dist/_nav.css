@@ -13,6 +13,7 @@ body {
   list-style: none;
   list-style-type: none;
   font-family: "note sans", sans-serif;
+  color: black;
 }
 
 nav {
@@ -96,4 +97,14 @@ nav .nav-compte .panier:hover a i,
 nav .nav-compte .compte:hover a i {
   color: #277c45;
   transition: 0.2s;
+}
+
+.breadcrumb {
+  margin: 20px 0 20px 0;
+  padding-left: 20px;
+}
+.breadcrumb a,
+.breadcrumb span {
+  font-size: 13px;
+  color: black;
 }
