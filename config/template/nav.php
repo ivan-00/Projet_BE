@@ -1,6 +1,7 @@
  <?php
     include './head.php';
     include '../init.php';
+    include './function.php';
 ?> 
 
 <nav>
@@ -31,3 +32,6 @@
             </div>
         </div>
 </nav>
+<div class="breadcrumb">
+    <a href="../index.php">Accueil</a> <span>></span> <a href="index.php"> Catégorie</a> <span>></span>
+</div>
