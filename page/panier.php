@@ -1,7 +1,8 @@
-<?php include 'config/template/head.php'; ?>
+<?php include '../config/template/head.php'; ?>
 <header>
-    <?php include 'config/template/nav.php'; ?>
+    <?php include '../config/template/nav.php'; ?>
 </header>
-<h2 class="text-center mt-5 mb-5">Page panier</h2>
-<hr>
+<div class="banner banner_panier">
+  <h1>Mon panier</h1>
+</div>
 <?php include 'config/template/footer.php'; ?>

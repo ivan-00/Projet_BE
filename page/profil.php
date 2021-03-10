@@ -2,6 +2,7 @@
 <header>
     <?php include 'config/template/nav.php'; ?>
 </header>
-<h2 class="text-center mt-5 mb-5">Page profil</h2>
-<hr>
+<div class="banner banner_profil">
+  <h1>Se connecter</h1>
+</div>
 <?php include 'config/template/footer.php'; ?>
