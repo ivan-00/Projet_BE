@@ -1,5 +1,8 @@
+<!-- Page de connexion -->
+<!-- Connection BDD -->
 <?php
 $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
+
 
 if(isset($_POST['forminscription']))
 {
@@ -9,7 +12,6 @@ if(isset($_POST['forminscription']))
     $confirm_password = sha1($_POST['confirm_password']);
     $email = htmlspecialchars($_POST['email']);
     $phone = htmlspecialchars($_POST['phone']);
-
         if(!empty($_POST['lastname']) && !empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm_password']) && !empty($_POST['phone']) && !empty($_POST['dept'])) 
             {
                 // Length de pseudo 
@@ -18,24 +20,13 @@ if(isset($_POST['forminscription']))
                     {
                         if (filter_var($email, FILTER_VALIDATE_EMAIL))
                         {
-                            if (preg_match ('/[a-z]/', $password)) {
-                                if (preg_match ('/[A-Z]/', $password)){
-                                    }
-                                    else{
-                                        $erreur = 'Majuscule';
-                                    }
-                                }
-                                else {
-                                    $erreur = 'Minuscule';
-                                }
-                            }
                             if ($password == $confirm_password) 
                             {
                                 $insertmbr = $bdd->prepare("INSERT INTO membre(last_name, nom, email, pass_md5, phone_number) VALUES (?, ?, ?, ? ,?)");
                                 $insertmbr->execute(array($lastname, $name, $email, $password, $phone));
                                 var_dump(array($lastname, $name, $email, $password, $phone));
-                                $_SESSION['comptecree'] = "Votre compte a bien été créé !";
-                                header('location:profil.php');
+                                $_SESSION ['comptecree'] = "Votre compte a bien été créé !";
+                                header('location: profil.php');
                                 exit();
                             }
                             else 
@@ -76,17 +67,17 @@ if(isset($_POST['forminscription']))
             ?>
 				<div class="input">
 					<label for="email">Adresse de mesagerie *</label>
-					<input id="email" type="email" name="email" required>
+					<input type="email" require>
 				</div>
 	<div class="input">
 		<label for="password">Mot de passe *</label>
-		<input type="password" name="password" required>
+		<input type="password" require>
 	</div>
 	<div class="bloc_submit">
 					<button name="formeconection" type="submit">Se connecter</button>
 					<!-- se souvenir de moi -->
 					<div class="remember">
-						<input name="remember" id="remeber" type="checkbox">
+						<input type="checkbox">
 						<label for="text">Se souvenir de moi.</label>
 					</div>
 				</div>
@@ -135,7 +126,7 @@ if(isset($_POST['forminscription']))
                 <select name="dept" id="">
                     <option value="detp">--Choisir un département--</option>
                     <option value="detp">--PARIS--</option>
-                    https://blog.ludikreation.com/utile-tableaux-php-des-regions-et-departements-de-france/ 
+                    <!-- https://blog.ludikreation.com/utile-tableaux-php-des-regions-et-departements-de-france/  -->
                 </select>
             </div>
             <div class="input">
