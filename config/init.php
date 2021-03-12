@@ -7,6 +7,7 @@
   {
     die("Une erreur s'est produite.");
   }
+  $db->setAttribute (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 //variable d'affichage etc. 
 
 //constantes système 
