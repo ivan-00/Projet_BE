@@ -1,7 +1,3 @@
-<?php
-    include 'Propjet_BE/config/template/head.php';
-?> 
-
 <footer>
 <div class="footer">
   <div class="footer_left">

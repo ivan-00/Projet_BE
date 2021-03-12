@@ -1,11 +1,9 @@
  <?php
-    include './head.php';
-    include '../init.php';
-    include './function.php';
+
 ?> 
 
 <nav>
-    <a class="nav-logo" href="">
+    <a class="nav-logo" href="/Projet_BE/index.php">
         CBD HACE
     </a>
     <div class="nav-item-center">

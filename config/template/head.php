@@ -1,7 +1,3 @@
-<?php
-include '../init.php';
-?>
-
 <html lang="fr">
 
 <head>
