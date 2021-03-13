@@ -1,8 +1,3 @@
-<?php
-include '/config/function.php'
-?>
-
-
 <head> <?php include '../config/template/head.php';?> </head>
 
 <?php
@@ -11,8 +6,7 @@ include '../config/template/nav.php';
 <div class="banner banner_fleur">
   <h1>Nos fleurs</h1>
   <p>Les huiles CBD permettent à chacun de renouveler sa consommation, sans aucune agression pour son corps. Il est en effet possible de consommer de l’huile enrichie en CBD de multiples façons créatives et saines. Découvrez nos huiles à spectre complet à teneur 40 % CBD, 100 % légales. Elles sont adaptées aux consommateurs réguliers et avertis qui ressentent le besoin d’intensifier le dosage.
-
-Fleuron de la Gamme Le Lab, notre huile à 40 % de CBD a fait l’objet de nombreux tests avant de vous être proposée pour assurer votre entière satisfaction. Elle dispose de toutes les accréditations nécessaires à garantir sa légalité ainsi que sa sécurité pour votre bien-être.</p>
+  Fleuron de la Gamme Le Lab, notre huile à 40 % de CBD a fait l’objet de nombreux tests avant de vous être proposée pour assurer votre entière satisfaction. Elle dispose de toutes les accréditations nécessaires à garantir sa légalité ainsi que sa sécurité pour votre bien-être.</p>
 </div>
 <!-- Nombre de produit disponible.  -->
 <div></div>
@@ -23,7 +17,6 @@ Fleuron de la Gamme Le Lab, notre huile à 40 % de CBD a fait l’objet de nombr
   $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
 
   $request = $bdd->query("SELECT * FROM product WHERE categorie = 1");
-
 
   $produits = $request->fetchAll();
 
