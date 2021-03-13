@@ -6,7 +6,8 @@ h4,
 a,
 li,
 ul,
-body {
+body,
+button {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -24,7 +25,8 @@ h4,
 a,
 li,
 ul,
-body {
+body,
+button {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -173,7 +175,8 @@ h4,
 a,
 li,
 ul,
-body {
+body,
+button {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -185,7 +188,7 @@ body {
 
 .banner {
   padding: 50px 40px;
-  height: 250px;
+  height: 170px;
 }
 
 .banner h1 {
@@ -296,7 +299,8 @@ h4,
 a,
 li,
 ul,
-body {
+body,
+button {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -336,6 +340,183 @@ body {
   position: absolute;
 }
 
+.containt {
+  padding: 0 60px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.containt hr {
+  border: 1px solid #434343;
+}
+
+.containt fieldset {
+  border: 1px solid #434343;
+  border-radius: 3px;
+  padding: 0 15px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containt .connexion {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.containt .connexion,
+.containt h4 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #707070;
+}
+
+.containt .connexion label,
+.containt h4 label {
+  margin-bottom: 10px;
+}
+
+.containt .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.containt .input input,
+.containt .input select {
+  width: 100%;
+}
+
+.containt input,
+.containt select {
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+.containt label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.containt .bloc_connexion,
+.containt .bloc_register {
+  width: 600px;
+}
+
+.containt button {
+  background-color: #277c45;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 10px 35px;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+}
+
+.containt .connexion .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.containt .connexion form .input {
+  width: 100%;
+}
+
+.containt .connexion form .input:nth-child(1) {
+  margin-bottom: 30px;
+}
+
+.containt .bloc_submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.containt .remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containt .register form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.containt .register form .input,
+.containt .register form .departement select {
+  width: 48%;
+}
+
+.containt .register form .gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.containt .register form .gender label:nth-child(n + 2) {
+  font-size: 10px;
+}
+
+.containt .register form .gender label:first-child {
+  width: 100%;
+}
+
+.containt .register form .gender .select_gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.containt .register form .gender .select_gender input {
+  width: 15px;
+  height: 15px;
+}
+
+.containt .register form .departement select {
+  height: 30px;
+  font-size: 15px;
+  width: 100%;
+  color: #707070;
+}
+
 p,
 h1,
 h2,
@@ -344,7 +525,8 @@ h4,
 a,
 li,
 ul,
-body {
+body,
+button {
   margin: 0;
   padding: 0;
   text-decoration: none;
