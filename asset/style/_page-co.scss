@@ -2,168 +2,167 @@
 // Page connexion & panier & page session.
 // PANIER
 .banner_profil {
-  background-image: url(img/banner_documentation.jpeg);
-  background-size: cover;
-  background-position-y: 650px;
-  position: relative;
-  h1 {
-    text-align: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-  }
+	background-image: url(img/banner_documentation.jpeg);
+	background-size: cover;
+	background-position-y: 650px;
+	position: relative;
+	h1 {
+		text-align: center;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+	}
 }
 .banner_panier {
-  background-image: url(img/banner_documentation.jpeg);
-  background-size: cover;
-  background-position-y: 650px;
-  position: relative;
-  h1 {
-    text-align: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-  }
+	background-image: url(img/banner_documentation.jpeg);
+	background-size: cover;
+	background-position-y: 650px;
+	position: relative;
+	h1 {
+		text-align: center;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+	}
 }
 //  LOGIN
-
 .containt {
-  padding: 0 60px;
-  margin-top: 60px;
-  // Flex
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  // .........................................
-  // CONDITION GENERAL
-  // Hr
-  hr {
-    border: 1px solid #434343;
-  }
-  // Fieldset
-  fieldset {
-    border: 1px solid #434343;
-    border-radius: 3px;
-    padding: 0 15px;
-    height: 400px;
-    // flex
-    display: flex;
-    align-items: center;
-  }
-  .connexion {
-    justify-content: center;
-  }
-  .connexion,
-  h4 {
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: normal;
-    color: $h4;
-    label {
-      margin-bottom: 10px;
-    }
-  }
-  // .input
-  .input {
-    // Flex
-    display: flex;
-    flex-wrap: wrap;
-    input,
-    select {
-      width: 100%;
-    }
-  }
-  input,
-  select {
-    margin-bottom: 10px;
-    height: 30px;
-  }
-  label {
-    font-size: 13px;
-    font-weight: bold;
-    color: $text_produit;
-  }
-  // Bloc
-  .bloc_connexion,
-  .bloc_register {
-    width: 600px;
-  }
-  // Bouton
-  button {
-    background-color: $buton-green;
-    border: none;
-    border-radius: 10px;
-    text-transform: uppercase;
-    padding: 10px 35px;
-    cursor: pointer;
-    // font
-    font-size: 15px;
-    color: white;
-  }
-  // FIN CONDITION GENERAL
-  // .........................................
-  // CONNEXION
-  .connexion .form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .connexion form .input {
-    width: 100%;
-  }
-  // connexion input margin-bottom
-  .connexion form .input:nth-child(1) {
-    margin-bottom: 30px;
-  }
-  .bloc_submit {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 30px;
-  }
-  .remember {
-    display: flex;
-    align-items: center;
-  }
-  // FIN CONNEXION
-  // .........................................
-  // REGISTER
-  .register form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    .input,
-    .departement select {
-      width: 48%;
-    }
-    // GENDER
-    .gender {
-      display: flex;
-      flex-wrap: wrap;
-      label:nth-child(n + 2) {
-        font-size: 10px;
-      }
-      label:first-child {
-        width: 100%;
-      }
-      .select_gender {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .select_gender input {
-        width: 15px;
-        height: 15px;
-      }
-    }
-    .departement {
-      select {
-        height: 30px;
-        font-size: 15px;
-        width: 100%;
-        color: $text_produit;
-      }
-    }
-  }
-  // FIN REGISTER
+	padding: 0 60px;
+	margin-top: 60px;
+	// Flex
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	// .........................................
+	// CONDITION GENERAL
+	// Hr
+	hr {
+		border: 1px solid #434343;
+	}
+	// Fieldset
+	fieldset {
+		border: 1px solid #434343;
+		border-radius: 3px;
+		padding: 0 15px;
+		height: 400px;
+		// flex
+		display: flex;
+		align-items: center;
+	}
+	.connexion {
+		justify-content: center;
+	}
+	.connexion,
+	h4 {
+		font-size: 20px;
+		font-weight: bold;
+		letter-spacing: normal;
+		color: $h4;
+		label {
+			margin-bottom: 10px;
+		}
+	}
+	// .input
+	.input {
+		// Flex
+		display: flex;
+		flex-wrap: wrap;
+		input,
+		select {
+			width: 100%;
+		}
+	}
+	input,
+	select {
+		margin-bottom: 10px;
+		height: 30px;
+	}
+	label {
+		font-size: 13px;
+		font-weight: bold;
+		color: $text_produit;
+	}
+	// Bloc
+	.bloc_connexion,
+	.bloc_register {
+		width: 600px;
+	}
+	// Bouton
+	button {
+		background-color: $buton-green;
+		border: none;
+		border-radius: 10px;
+		text-transform: uppercase;
+		padding: 10px 35px;
+		cursor: pointer;
+		// font
+		font-size: 15px;
+		color: white;
+	}
+	// FIN CONDITION GENERAL
+	// .........................................
+	// CONNEXION
+	.connexion .form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.connexion form .input {
+		width: 100%;
+	}
+	// connexion input margin-bottom
+	.connexion form .input:nth-child(1) {
+		margin-bottom: 30px;
+	}
+	.bloc_submit {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 30px;
+	}
+	.remember {
+		display: flex;
+		align-items: center;
+	}
+	// FIN CONNEXION
+	// .........................................
+	// REGISTER
+	.register form {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.input,
+		.departement select {
+			width: 48%;
+		}
+		// GENDER
+		.gender {
+			display: flex;
+			flex-wrap: wrap;
+			label:nth-child(n + 2) {
+				font-size: 10px;
+			}
+			label:first-child {
+				width: 100%;
+			}
+			.select_gender {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.select_gender input {
+				width: 15px;
+				height: 15px;
+			}
+		}
+		.departement {
+			select {
+				height: 30px;
+				font-size: 15px;
+				width: 100%;
+				color: $text_produit;
+			}
+		}
+	}
+	// FIN REGISTER
 }
