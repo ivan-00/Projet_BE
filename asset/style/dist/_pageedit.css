@@ -1,0 +1,81 @@
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+section.editprofil {
+  padding: 0 30px;
+}
+section.editprofil article h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+section.editprofil article hr {
+  border: solid 1px black;
+}
+section.editprofil form {
+  padding: 20px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 25%;
+}
+section.editprofil form .edit_section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.editprofil form .edit_section label {
+  font-size: 16px;
+  color: #707070;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 9px 0;
+}
+section.editprofil form .edit_section label::before {
+  content: "-";
+  margin: 0 5px 0 20px;
+}
+section.editprofil form .edit_section input,
+section.editprofil form .edit_section select {
+  height: 30px;
+  width: 100%;
+}
+section.editprofil form .submit {
+  background-color: #277c45;
+  border: none;
+  border-radius: 5px;
+  margin: 15px;
+  color: white;
+  font-size: 13px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+section.editprofil form .submit:hover {
+  background-color: #053716;
+  transition: 0.2s;
+}

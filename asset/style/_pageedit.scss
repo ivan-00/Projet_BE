@@ -1,0 +1,63 @@
+@import "_reset.scss";
+section.editprofil {
+	padding: 0 30px;
+	article {
+		h2 {
+			text-align: center;
+			margin: 20px 0;
+		}
+		hr {
+			border: solid 1px black;
+		}
+	}
+	form {
+		padding: 20px 30px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		border: solid 1px black;
+		// Flex
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 25%;
+		.edit_section {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			label {
+				font-size: 16px;
+				color: $text_produit;
+				font-weight: bolder;
+				width: 100%;
+				text-align: center;
+				margin: 20px 0 9px 0;
+			}
+			label::before {
+				content: "-";
+				margin: 0 5px 0 20px;
+			}
+			input,
+			select {
+				height: 30px;
+				width: 100%;
+			}
+		}
+		.submit {
+			background-color: $buton-green;
+			border: none;
+			border-radius: 5px;
+			margin: 15px;
+			// font
+			color: white;
+			font-size: 13px;
+			font-weight: bolder;
+			cursor: pointer;
+		}
+		.submit:hover {
+			background-color: $butonhover;
+			transition: 0.2s;
+		}
+	}
+}

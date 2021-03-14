@@ -1,0 +1,74 @@
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+.profil_file {
+  padding: 0 30px;
+}
+.profil_file h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.profil_file hr {
+  border: solid 1px black;
+}
+.profil_file h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #707070;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.profil_file ul {
+  border: solid 1px black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 50%;
+  padding: 20px 20px;
+}
+.profil_file ul li {
+  margin-bottom: 5px;
+}
+.profil_file ul li::before {
+  content: "-";
+  margin: 0 5px 0 20px;
+}
+.profil_file ul h4 {
+  font-size: 18px;
+  color: #707070;
+  font-weight: bolder;
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+}
+.profil_file .buton_profil {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.profil_file .buton_profil a {
+  text-align: center;
+  background-color: #277c45;
+  padding: 15px 25px;
+  border-radius: 15px;
+  color: white;
+  font-size: 15px;
+}
+.profil_file .link:first-child {
+  margin-right: 20px;
+}
