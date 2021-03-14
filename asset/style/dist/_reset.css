@@ -16,3 +16,21 @@ button {
   font-family: "note sans", sans-serif;
   color: black;
 }
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}

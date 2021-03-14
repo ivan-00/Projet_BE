@@ -8,23 +8,41 @@ li,
 ul,
 body,
 button {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  list-style-type: none;
-  font-family: "note sans", sans-serif;
-  color: black;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	list-style-type: none;
+	font-family: "note sans", sans-serif;
+	color: black;
 }
 // color
 $text-green: #277c45;
 $buton-green: #277c45;
+$butonhover: #053716;
 $text-logo: #10331c;
 //
 $h3: #707070;
 $h4: #707070;
 $text_produit: #707070;
-//
 
+//Profil
 $background-color_grey: rgba(128, 128, 128, 0.363);
 $background-color_grey-dark: #838383;
+
+// Erreures
+input:invalid {
+	border: red solid 3px;
+}
+input:valid:not(.champ) {
+	border: green solid 1px;
+}
+// Page lgin
+.register .erreur {
+	color: red;
+	font-size: 14px;
+}
+.connexion .erreur_connect {
+	color: red;
+	font-size: 14px;
+}
