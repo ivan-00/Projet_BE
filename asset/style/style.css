@@ -17,6 +17,24 @@ button {
   color: black;
 }
 
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
 p,
 h1,
 h2,
@@ -34,6 +52,24 @@ button {
   list-style-type: none;
   font-family: "note sans", sans-serif;
   color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
 }
 
 nav {
@@ -186,6 +222,24 @@ button {
   color: black;
 }
 
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
 .banner {
   padding: 50px 40px;
   height: 170px;
@@ -308,6 +362,24 @@ button {
   list-style-type: none;
   font-family: "note sans", sans-serif;
   color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
 }
 
 .banner_profil {
@@ -534,6 +606,246 @@ button {
   list-style-type: none;
   font-family: "note sans", sans-serif;
   color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
+.profil_file {
+  padding: 0 30px;
+}
+
+.profil_file h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profil_file hr {
+  border: solid 1px black;
+}
+
+.profil_file h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #707070;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.profil_file ul {
+  border: solid 1px black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 50%;
+  padding: 20px 20px;
+}
+
+.profil_file ul li {
+  margin-bottom: 5px;
+}
+
+.profil_file ul li::before {
+  content: "-";
+  margin: 0 5px 0 20px;
+}
+
+.profil_file ul h4 {
+  font-size: 18px;
+  color: #707070;
+  font-weight: bolder;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin-bottom: 10px;
+}
+
+.profil_file .buton_profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profil_file .buton_profil a {
+  text-align: center;
+  background-color: #277c45;
+  padding: 15px 25px;
+  border-radius: 15px;
+  color: white;
+  font-size: 15px;
+}
+
+.profil_file .link:first-child {
+  margin-right: 20px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
+section.editprofil {
+  padding: 0 30px;
+}
+
+section.editprofil article h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+section.editprofil article hr {
+  border: solid 1px black;
+}
+
+section.editprofil form {
+  padding: 20px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 25%;
+}
+
+section.editprofil form .edit_section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.editprofil form .edit_section label {
+  font-size: 16px;
+  color: #707070;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 9px 0;
+}
+
+section.editprofil form .edit_section label::before {
+  content: "-";
+  margin: 0 5px 0 20px;
+}
+
+section.editprofil form .edit_section input,
+section.editprofil form .edit_section select {
+  height: 30px;
+  width: 100%;
+}
+
+section.editprofil form .submit {
+  background-color: #277c45;
+  border: none;
+  border-radius: 5px;
+  margin: 15px;
+  color: white;
+  font-size: 13px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+section.editprofil form .submit:hover {
+  background-color: #053716;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
 }
 
 footer {

@@ -422,6 +422,25 @@ button {
   color: black;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
