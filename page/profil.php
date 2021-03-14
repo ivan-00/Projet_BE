@@ -1,6 +1,11 @@
 <?php
 session_start();
+if (isset($_POST["nom"]) AND !empty($_POST["nom"])) {
+  $_SESSION["nom"] = $_POST["nom"];
+}
+setcookie($_SESSION['nom'], time() + 365*24*3600, null, null, false, true);
 $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
+include_once('../config/cookie_connect.php');
 ?>
 <?php include '../config/template/head.php'; ?>
 <header>
@@ -10,7 +15,6 @@ $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","
 
 // ...........................................................
 if(isset($_GET['id']) AND $_GET ['id'] > 0 )
-
 {
   $getid = intval($_GET['id']);
   $requser = $bdd -> prepare('SELECT * FROM membre WHERE id = ?');
@@ -21,26 +25,22 @@ if(isset($_GET['id']) AND $_GET ['id'] > 0 )
 <div class="banner banner_profil">
   <h1>Mon profil</h1>
 </div>
-<section>
-  <article>
+<section class="profil_file">
     <h2>Bienvenu à toi jeune entrepreneur.</h2>
-  </article>
   <article>
+    <hr>
     <!-- pseudo -->
-    <h2>Profil de 
+    <h3>Profil de 
       <?php 
-      echo $userinfo['nom']; 
+      echo $userinfo['nom'];
       ?>
       &nbsp
       <?php
       echo $userinfo ["last_name"]; 
       ?>
-  
-      
-      
-    </h2>
+    </h3>
     <ul>
-      <h3>Mes informations personels.</h3>
+      <h4>Mes informations personelles.</h4>
       <li class="user-name" >
       Adresse mail: <strong> <?php echo $userinfo ["email"];?> </strong> 
       </li>
@@ -55,16 +55,13 @@ if(isset($_GET['id']) AND $_GET ['id'] > 0 )
     <?php
     if ((isset($_SESSION['id'])) AND $userinfo ['id'] == $_SESSION['id']) 
     {?>
-      <a class="link_edit_profil" href="editionprofil.php">Editer mon profil</a>
-      <a class="link_deconnection" href="deconnexion.php">Se déconnecter</a>
+    <div class="buton_profil">
+      <a class="link edit_profil" href="editionprofil.php">Editer mon profil</a>
+      <a class="link deconnection" href="deconnexion.php">Se déconnecter</a>
+    </div>
     <?php
     }
     ?>
-    <div>
-      
-    </div>
-    <!-- Mail -->
-
   </article>
 </section>
 <?php }
