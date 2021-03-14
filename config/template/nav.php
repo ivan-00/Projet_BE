@@ -1,7 +1,3 @@
- <?php
-
-?> 
-
 <nav>
     <a class="nav-logo" href="/Projet_BE/index.php">
         CBD HACE
