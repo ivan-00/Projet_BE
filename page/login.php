@@ -2,6 +2,7 @@
 session_start();
 $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
 
+include_once('../config/cookie_connect.php');
 // INSCRIPTION
 if(isset($_POST['forminscription']))
 {
@@ -33,23 +34,28 @@ if(isset($_POST['forminscription']))
                             header('location: profil.php');
                             exit();
                         }
-                        else { 
+                        else {
+                            header('Location: login.php#middlepage'); 
                             $erreur = "Les mots de passe ne corespondent pas !";
                         }
                     }
                     else {
+                        header('Location: login.php#middlepage');
                         $erreur = "Mail deja utilisé";
                     }    
                 }
                 else {
+                    header('Location: login.php#middlepage');
                     $erreur = "vrai eamil";
                 }
             }
             else {
+                header('Location: login.php#middlepage');
                 $erreur = "Votre prénom ne doit pas dépasser plus de 10 caractéres !";
             }
                     }
-        else { 
+        else {
+            header('Location: login.php#middlepage'); 
             $erreur = "Tous les champs doivent être complétés !!";
         }
 }
@@ -67,6 +73,11 @@ if (isset($_POST['formeconection']))
             $requser -> execute(array ($emailconnect, $mdpconnect));
             $userexist = $requser->rowCount();
             if($userexist == 1) {
+                if(isset($_POST['rememberme'])) {
+                    setcookie('email',$emailconnect,time()+365*24*3600, null,null,false,true);
+                    setcookie('password',$mdpconnect,time()+365*24*3600, null,null,false,true);
+                    
+                }
                 $userinfo = $requser->fetch();
                 $_SESSION['id'] = $userinfo['id'];
                 $_SESSION['email'] = $userinfo['email'];
@@ -75,10 +86,13 @@ if (isset($_POST['formeconection']))
             }
             else {
                 $erreurcoonnect ="Mauvais identifiant/mot de passe";
+                // header('Location: login.php#middlepage');   
             }
         }
         else {
             $erreurcoonnect ="Tout les champs doivents étre complétés";
+            // header('Location: login.php#middlepage');
+
         }
 }
 ?>
@@ -106,25 +120,25 @@ if (isset($_POST['formeconection']))
 		<label for="password">Mot de passe *</label>
 		<input name="mdpconnect" type="password">
 	</div>
-	<div class="bloc_submit">
-        <button name="formeconection" type="submit">Se connecter</button>
-        <!-- se souvenir de moi -->
-        <div class="remember">
-            <input type="checkbox">
-            <label for="text">Se souvenir de moi.</label>
-        </div>
-	</div>
     <?php
         if (isset($erreurcoonnect))
         {
             echo "<div class='erreur_connect'>". $erreurcoonnect ."</div>";
         }
     ?>
+	<div class="bloc_submit">
+        <button name="formeconection" type="submit">Se connecter</button>
+        <!-- se souvenir de moi -->
+        <div class="remember">
+            <input name="rememberme" type="checkbox">
+            <label for="text">Se souvenir de moi.</label>
+        </div>
+	</div>
 			</form>
 		</fieldset>
 	</div>
     <!-- Register -->
-    <div class="bloc_register">
+    <div id="middlepage" class="bloc_register">
         <h4>S'enregistrer</h4>
         <hr>
         <fieldset class="register">
@@ -141,10 +155,7 @@ if (isset($_POST['formeconection']))
                 <label for="email">Adresse mail: *</label>
                 <input name="email" value="<?php if(isset($email)){echo $email;} ?>" type="email">
             </div>
-            <div class="input">
-                <label for="password">Mot de passe: *</label>
-                <input name="password" type="password">
-            </div>
+
             <div class="input">
                 <label for="confirm_password">Confirmez votre mot de passe: *</label>
                 <input name="confirm_password" type="password">
@@ -169,8 +180,13 @@ if (isset($_POST['formeconection']))
                 </select>
             </div>
             <div class="input">
+                <label for="password"  >Mot de passe: *</label>
+                <input name="password" pattern=".[a-zA-Z0-9]{10,}" type="password">
+            </div>
+            <div class="input">
                 <label for="phone">Numéro de téléphone: *</label>
-                <input name="phone" type="tel" value="<?php if (isset($phone)){echo $phone;} ?>">
+                <input pattern="(0|\\+33|0033)[1-9][0-9]{8}"
+                name="phone" placeholder="ex:0678654367" type="tel" value="<?php if (isset($phone)){echo $phone;} ?>">
             </div>
             <button type="submit" name="forminscription">S'enregistrer</button>
             <!-- erreur champs incomplet -->

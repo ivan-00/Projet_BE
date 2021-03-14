@@ -1,8 +1,12 @@
- <?php include 'config/template/head.php'; ?>
-<?php
+<?php 
 session_start();
+setcookie('email','',time()-3600);
+setcookie('password','',time()-3600);
 $_SESSION = array();
 session_destroy();
 header('Location: login.php');
 exit();
+?>
+
+
 ?>
