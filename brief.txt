@@ -27,7 +27,6 @@
         -> min 3 photos 
         -> prix 
         -> stock 
-        -> tarif
 
     -> session : 
         -> simple visiteur (non-connecté NO SESSION)
