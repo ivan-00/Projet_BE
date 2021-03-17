@@ -19,16 +19,16 @@ include '../config/template/nav.php';
   $request = $bdd->query("SELECT * FROM product WHERE categorie = 1");
 
   $produits = $request->fetchAll();
-
-  foreach ($produits as $produit) {
-    echo "<div class='tuile''>";
-      echo '<a href="">';
-      echo '<img src='.$produit["img"]." alt='Image CBD' class='image_produit' /> <br />";
-      echo "<h2 class='nom_produit'>". $produit["nom_produit"]. "</h2>";
-      echo "<p class='titre_prix'> A partir de : " ."<p class='prix'>".$produit['prix']." €</p>";
-      echo '</a>';
-    echo "</div>";
-  }
+  foreach ($produits as $produit) 
+  {?>    
+    <div class='tuile'>
+      <a href= '../page/fiche_produit.php?produit=<?php echo $produit['id_produit'];?>'> 
+      <img src=' <?php echo $produit["img"];?>' alt='Image CBD' class='image_produit' /> <br />
+      <h2 class='nom_produit'> <?php echo $produit["nom_produit"];?> </h2>
+      <p class='titre_prix'> A partir de : <p class='prix'><?php echo $produit['prix'];?> €</p>
+      </a>
+    </div>
+    <?php }
   ?> 
 </div>
 <!-- Section Article -->
