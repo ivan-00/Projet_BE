@@ -30,6 +30,10 @@ if(isset($_GET['id']) AND $_GET ['id'] > 0 )
   <article>
     <hr>
     <!-- pseudo -->
+    <?php 
+      if ($_SESSION['estConnecte'] == false)
+        header('Location: login.php');
+    ?>
     <h3>Profil de 
       <?php 
       echo $userinfo['nom'];

@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
 
 include_once('../config/cookie_connect.php');
@@ -30,7 +31,8 @@ if(isset($_POST['forminscription']))
                         {
                             $insertmbr = $bdd->prepare("INSERT INTO membre(last_name, nom, email, pass_md5, phone_number, departement) VALUES (?, ?, ?, ? ,? ,?)");
                             $insertmbr->execute(array($lastname, $name, $email, $password, $phone, $dept));
-                            $_SESSION ['comptecree'] = "Votre compte a bien été créé !";
+                            $_SESSION['comptecree'] = true;
+                            // Enregistrer en session les variables nom...
                             header('location: profil.php');
                             exit();
                         }
@@ -82,6 +84,7 @@ if (isset($_POST['formeconection']))
                 $_SESSION['id'] = $userinfo['id'];
                 $_SESSION['email'] = $userinfo['email'];
                 $_SESSION['nom'] = $userinfo['nom'];
+                $_SESSION['estConnecte'] = true;
                 header('Location: profil.php?id='.$_SESSION['id']);
             }
             else {
