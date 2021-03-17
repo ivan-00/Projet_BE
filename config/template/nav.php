@@ -21,11 +21,9 @@
             <div class="panier">
                 <a href="/Projet_BE/page/panier.php"><i class="fas fa-shopping-cart"></i>Panier</a>
             </div>
+
             <div class="compte">
-                <a href="/Projet_BE/page/login.php"> <i class="fas fa-user"></i> Compte client</a>
+                <a href='/Projet_BE/page/login.php'> <i class="fas fa-user"></i> Compte client</a>
             </div>
         </div>
 </nav>
-<div class="breadcrumb">
-    <a href="../index.php">Accueil</a> <span>></span> <a href="index.php"> Catégorie</a> <span>></span>
-</div>
