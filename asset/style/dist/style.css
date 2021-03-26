@@ -17,6 +17,24 @@ button {
   color: black;
 }
 
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
 p,
 h1,
 h2,
@@ -34,6 +52,24 @@ button {
   list-style-type: none;
   font-family: "note sans", sans-serif;
   color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
 }
 
 nav {
@@ -129,6 +165,150 @@ nav .nav-compte .compte:hover a i {
   color: black;
 }
 
+/*! Flickity v2.2.2
+https://flickity.metafizzy.co
+---------------------------------------------- */
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus {
+  outline: none;
+}
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+.flickity-button {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  color: #333;
+}
+
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19f;
+}
+
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+.flickity-prev-next-button.next {
+  right: 10px;
+}
+
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
 p,
 h1,
 h2,
@@ -146,6 +326,219 @@ button {
   list-style-type: none;
   font-family: "note sans", sans-serif;
   color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
+.banner.banner_accueil {
+  background-image: url(img/banner_cigarette.jpeg);
+  background-size: cover;
+  background-position-y: 650px;
+  position: relative;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.banner.banner_accueil .banner_text {
+  width: 20%;
+  text-align: center;
+}
+.banner.banner_accueil .banner_text img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.banner.banner_accueil .banner_text h1 {
+  font-size: 20px;
+}
+.banner.banner_accueil .banner_text p {
+  font-size: 11px;
+  letter-spacing: 2px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: left;
+}
+
+main section .entete_index {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 40px;
+}
+main section .entete_index h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #707070;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+main section .entete_index p {
+  font-size: 17px;
+  color: #707070;
+}
+main section .produit_image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+main section .produit_image h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  z-index: 3;
+}
+main section .produit_image img {
+  width: 100%;
+  filter: brightness(50%);
+}
+main section .produit_image .bloc_produit:not(:nth-child(2)) {
+  width: 30%;
+  height: 450px;
+  position: relative;
+}
+main section .produit_image .bloc_produit:not(:nth-child(2)) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main section .produit_image .bloc_produit:not(:nth-child(2)) a h1 {
+  display: block;
+  width: 100%;
+  bottom: 20px;
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+main section .produit_image .bloc_produit:nth-child(2) {
+  width: 30%;
+  height: 450px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin: 0 25px;
+}
+main section .produit_image .bloc_produit:nth-child(2) a:first-child img {
+  position: absolute;
+  top: -90px;
+}
+main section .produit_image .bloc_produit:nth-child(2) a {
+  height: 45%;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+main section .produit_image .bloc_produit:nth-child(2) h1 {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+main section .produit_image a:hover img {
+  filter: brightness(100%);
+  transition: 0.2s;
+}
+main section .carousel {
+  padding: 0 40px;
+  margin-bottom: 100px;
+}
+main section .carousel h2 {
+  text-align: center;
+  font-size: 25px;
+  color: #707070;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+main section .carousel .carousel_produit .carousel-cell {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin-right: 30px;
+}
+main section .carousel .carousel_produit .carousel-cell img {
+  width: 250px;
+  height: 170px;
+  margin-bottom: 10px;
+}
+main section .carousel .carousel_produit .carousel-cell h2 {
+  font-size: 12px;
+  text-align: center;
+  color: #707070;
+  width: 100%;
+  margin: 5 0;
+}
+main section .carousel .carousel_produit .carousel-cell p {
+  text-align: center;
+}
+main section .carousel .carousel_produit .carousel-cell .titre_prix {
+  width: 100%;
+  font-size: 10px;
+  margin-bottom: 7px;
+}
+main section .carousel .carousel_produit .carousel-cell .titre_prix .prix {
+  font-size: 14px;
+  font-weight: bolder;
+}
+main section .carousel .carousel_produit .carousel-cell:hover {
+  transform: scale(1);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
 }
 
 .banner {
@@ -255,6 +648,195 @@ button {
   list-style-type: none;
   font-family: "note sans", sans-serif;
   color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
+.banner {
+  padding: 50px 40px;
+  height: 170px;
+}
+.banner h1 {
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.banner p {
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: 25px;
+}
+
+.banner_fleur {
+  background-image: url(img/banner_fleur.png);
+  background-size: cover;
+  background-position-y: 570px;
+}
+
+.banner_huile {
+  background-image: url(img/banner_huile.jpeg);
+  background-size: cover;
+  background-position-y: 570px;
+}
+
+.banner_vaporette {
+  background-image: url(img/banner_cigarette.jpeg);
+  background-size: cover;
+  background-position-y: 820px;
+}
+
+.banner_documentation {
+  background-image: url(img/banner_documentation.jpeg);
+  background-size: cover;
+  background-position-y: 650px;
+}
+
+.list_produit {
+  padding: 40px 60px 0 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tuile {
+  display: flex;
+  margin-bottom: 70px;
+}
+.tuile .image_produit {
+  width: 280px;
+  height: 227px;
+  margin-bottom: 30px;
+}
+.tuile h2 {
+  font-size: 19px;
+  font-weight: normal;
+  text-align: center;
+}
+.tuile .titre_prix {
+  font-size: 9px;
+  text-align: center;
+  font-weight: inherit;
+}
+.tuile .prix {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section_article {
+  padding: 0 60px;
+}
+.section_article h3 {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  color: #707070;
+}
+.section_article p {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #707070;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+}
+.container .bloc_info {
+  width: 50%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
 }
 
 .banner_profil {
@@ -422,6 +1004,80 @@ button {
   color: black;
 }
 
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
+.profil_file {
+  padding: 0 30px;
+}
+.profil_file h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.profil_file hr {
+  border: solid 1px black;
+}
+.profil_file h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #707070;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.profil_file ul {
+  border: solid 1px black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 50%;
+  padding: 20px 20px;
+}
+.profil_file ul li {
+  margin-bottom: 5px;
+}
+.profil_file ul li::before {
+  content: "-";
+  margin: 0 5px 0 20px;
+}
+.profil_file ul h4 {
+  font-size: 18px;
+  color: #707070;
+  font-weight: bolder;
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+}
+.profil_file .buton_profil {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.profil_file .buton_profil a {
+  text-align: center;
+  background-color: #277c45;
+  padding: 15px 25px;
+  border-radius: 15px;
+  color: white;
+  font-size: 15px;
+}
+.profil_file .link:first-child {
+  margin-right: 20px;
+}
+
 p,
 h1,
 h2,
@@ -439,6 +1095,120 @@ button {
   list-style-type: none;
   font-family: "note sans", sans-serif;
   color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
+section.editprofil {
+  padding: 0 30px;
+}
+section.editprofil article h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+section.editprofil article hr {
+  border: solid 1px black;
+}
+section.editprofil form {
+  padding: 20px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 25%;
+}
+section.editprofil form .edit_section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.editprofil form .edit_section label {
+  font-size: 16px;
+  color: #707070;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 9px 0;
+}
+section.editprofil form .edit_section label::before {
+  content: "-";
+  margin: 0 5px 0 20px;
+}
+section.editprofil form .edit_section input,
+section.editprofil form .edit_section select {
+  height: 30px;
+  width: 100%;
+}
+section.editprofil form .submit {
+  background-color: #277c45;
+  border: none;
+  border-radius: 5px;
+  margin: 15px;
+  color: white;
+  font-size: 13px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+section.editprofil form .submit:hover {
+  background-color: #053716;
+  transition: 0.2s;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
 }
 
 footer {

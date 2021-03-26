@@ -766,6 +766,282 @@ input:valid:not(.champ) {
   font-size: 14px;
 }
 
+.banner {
+  padding: 50px 40px;
+  height: 170px;
+}
+
+.banner h1 {
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: 25px;
+}
+
+.banner_fleur {
+  background-image: url(img/banner_fleur.png);
+  background-size: cover;
+  background-position-y: 570px;
+}
+
+.banner_huile {
+  background-image: url(img/banner_huile.jpeg);
+  background-size: cover;
+  background-position-y: 570px;
+}
+
+.banner_vaporette {
+  background-image: url(img/banner_cigarette.jpeg);
+  background-size: cover;
+  background-position-y: 820px;
+}
+
+.banner_documentation {
+  background-image: url(img/banner_documentation.jpeg);
+  background-size: cover;
+  background-position-y: 650px;
+}
+
+.list_produit {
+  padding: 40px 60px 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tuile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.tuile .image_produit {
+  width: 280px;
+  height: 227px;
+  margin-bottom: 30px;
+}
+
+.tuile h2 {
+  font-size: 19px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.tuile .titre_prix {
+  font-size: 9px;
+  text-align: center;
+  font-weight: inherit;
+}
+
+.tuile .prix {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section_article {
+  padding: 0 60px;
+}
+
+.section_article h3 {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  color: #707070;
+}
+
+.section_article p {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #707070;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 40px;
+}
+
+.container .bloc_info {
+  width: 46%;
+  border: solid 1px black;
+  padding: 40px 40px;
+}
+
+.container .bloc_info h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #707070;
+  margin-bottom: 20px;
+}
+
+.container .bloc_info .text_condition {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.container .bloc_info .titre_description {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.container .bloc_info .text_description {
+  font-size: 19px;
+}
+
+.container .bloc_info .bloc_prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .bloc_info .bloc_prix .text_prix_a {
+  font-size: 25px;
+  margin: 20px 0;
+  color: #707070;
+}
+
+.container .bloc_info .bloc_prix .text_prix {
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.container .bloc_info .bloc_quantite {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.container .bloc_info .bloc_quantite input {
+  height: 40px;
+}
+
+.container .bloc_info .bloc_quantite input[type=button] {
+  width: 35px;
+  border: none;
+  background-color: #277c45;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.container .bloc_info .bloc_quantite input[type=text] {
+  width: 40px;
+  margin: 0 10px;
+  padding: 0 4px;
+  color: #277c45;
+  font-size: 19px;
+}
+
+.container .bloc_info .bloc_quantite input[type=submit] {
+  margin-left: 20px;
+  border: none;
+  color: white;
+  background-color: #277c45;
+  padding: 0 10px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
 .banner_profil {
   background-image: url(img/banner_documentation.jpeg);
   background-size: cover;

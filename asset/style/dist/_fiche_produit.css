@@ -1,0 +1,108 @@
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+body,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: "note sans", sans-serif;
+  color: black;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid:not(.champ) {
+  border: green solid 1px;
+}
+
+.register .erreur {
+  color: red;
+  font-size: 14px;
+}
+
+.connexion .erreur_connect {
+  color: red;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+.container .bloc_info {
+  width: 46%;
+  border: solid 1px black;
+  padding: 40px 40px;
+}
+.container .bloc_info h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #707070;
+  margin-bottom: 20px;
+}
+.container .bloc_info .text_condition {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.container .bloc_info .titre_description {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.container .bloc_info .text_description {
+  font-size: 19px;
+}
+.container .bloc_info .bloc_prix {
+  display: flex;
+  align-items: center;
+}
+.container .bloc_info .bloc_prix .text_prix_a {
+  font-size: 25px;
+  margin: 20px 0;
+  color: #707070;
+}
+.container .bloc_info .bloc_prix .text_prix {
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.container .bloc_info .bloc_quantite {
+  display: inline-flex;
+}
+.container .bloc_info .bloc_quantite input {
+  height: 40px;
+}
+.container .bloc_info .bloc_quantite input[type=button] {
+  width: 35px;
+  border: none;
+  background-color: #277c45;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.container .bloc_info .bloc_quantite input[type=text] {
+  width: 40px;
+  margin: 0 10px;
+  padding: 0 4px;
+  color: #277c45;
+  font-size: 19px;
+}
+.container .bloc_info .bloc_quantite input[type=submit] {
+  margin-left: 20px;
+  border: none;
+  color: white;
+  background-color: #277c45;
+  padding: 0 10px;
+}
