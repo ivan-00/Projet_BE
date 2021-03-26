@@ -14,7 +14,7 @@ include '../config/template/nav.php';
 <div class="list_produit">
   <?php
   // preparation de la requete.
-  // $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
+  require '../config/init.php';
 
   $request = $bdd->query("SELECT * FROM product WHERE categorie = 1");
 

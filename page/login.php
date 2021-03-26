@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
+require '../config/init.php';
 
 include_once('../config/cookie_connect.php');
 // INSCRIPTION

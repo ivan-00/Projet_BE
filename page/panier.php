@@ -1,6 +1,6 @@
 <?php
 session_start();
-// $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
+require '../config/init.php';
 ?>
 <?php include '../config/template/head.php'; ?>
 <header>
@@ -9,4 +9,4 @@ session_start();
 <div class="banner banner_panier">
   <h1>Mon panier</h1>
 </div>
-<?php include 'config/template/footer.php'; ?>
+<?php include '../config/template/footer.php'; ?>
