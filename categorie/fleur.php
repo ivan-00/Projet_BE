@@ -14,7 +14,7 @@ include '../config/template/nav.php';
 <div class="list_produit">
   <?php
   // preparation de la requete.
-  $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
+  // $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
 
   $request = $bdd->query("SELECT * FROM product WHERE categorie = 1");
 
@@ -22,7 +22,7 @@ include '../config/template/nav.php';
   foreach ($produits as $produit) 
   {?>    
     <div class='tuile'>
-      <a href= '../page/fiche_produit.php?produit=<?php echo $produit['id_produit'];?>'> 
+      <a href= '../page/fiche_produit-fleur.php?produit=<?php echo $produit['id_produit'];?>'> 
       <img src=' <?php echo $produit["img"];?>' alt='Image CBD' class='image_produit' /> <br />
       <h2 class='nom_produit'> <?php echo $produit["nom_produit"];?> </h2>
       <p class='titre_prix'> A partir de : <p class='prix'><?php echo $produit['prix'];?> €</p>

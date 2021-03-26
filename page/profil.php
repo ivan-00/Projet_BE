@@ -4,7 +4,7 @@ if (isset($_POST["nom"]) AND !empty($_POST["nom"])) {
   $_SESSION["nom"] = $_POST["nom"];
 }
 setcookie($_SESSION['nom'], time() + 365*24*3600, null, null, false, true);
-$bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
+// $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
 include_once('../config/cookie_connect.php');
 ?>
 <?php include '../config/template/head.php'; ?>

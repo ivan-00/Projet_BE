@@ -2,7 +2,7 @@
 session_start();
   try//connexion à la bdd
   {
-    $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
+    // $bdd = new PDO("mysql:host=localhost;dbname=projetBackend;charset=utf8","root","root");
   }
   catch(Exception $e)
   {
