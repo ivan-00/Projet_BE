@@ -14,26 +14,34 @@ res.addEventListener('blur', function () {
   result = parseInt(result.value, 10);
 });
 btnPlus.addEventListener('click', function () {
-  if (result >= 0 && result < 99) {
-    result++;
-    document.getElementById('result').value = result;
-
-    var _prixFinal = result * prixAffiche.innerHTML;
-
-    prixAffiche.innerHTML = _prixFinal;
-    console.log('prixFinal');
-  }
+  countQuantity++;
+  fieldQuantity.value = countQuantity;
 });
 btnMoins.addEventListener('click', function () {
-  if (result > 0 && result <= 99) {
-    result--;
-    document.getElementById('result').value = result;
-
-    if (prixAffiche / 2) {
-      prixAffiche = prixDepart / 2;
-      prixAffiche.innerHTML = prixFinal;
-    } // let prixFinal   =  prixAffiche.innerHTML / result
-    // prixAffiche.innerHTML = prixFinal;
-
+  if (countQuantity > 1) {
+    countQuantity--;
+    fieldQuantity.value = countQuantity;
   }
-}); // Calculer le prix.
+}); // Calculer le prix. 
+// .....................................
+
+btnQuantityPlus.addEventListener('click', function () {
+  countQuantity++;
+  fieldQuantity.value = countQuantity;
+});
+btnQuantityMinus.addEventListener('click', function () {
+  if (countQuantity > 1) {
+    countQuantity--;
+    fieldQuantity.value = countQuantity;
+  }
+});
+btnPricePlus.addEventListener('click', function () {
+  countPrice++;
+  fieldPrice.value = countPrice;
+});
+btnPriceMinus.addEventListener('click', function () {
+  if (countPrice > 1) {
+    countPrice--;
+    fieldPrice.value = countPrice;
+  }
+}); // ...................................
