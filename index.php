@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../config/init.php';
+require './config/init.php';
 ?>
 <?php include 'config/template/head.php'; ?>
 <header>
@@ -73,7 +73,7 @@ require '../config/init.php';
   for ($compteur = 0; $compteur < 7; $compteur++) {
   ?>
       <div class='carousel-cell'>
-      <a href="page/fiche_produit-fleur.php?produit=<?php echo $produits[$compteur]['id_produit'];?>">
+      <a rel="noopener" href="page/fiche_produit-fleur.php?produit=<?php echo $produits[$compteur]['id_produit'];?>">
       <img src='<?php echo $produits[$compteur]["img"];?>' alt="Image CBD" class="image_produit" />
       </a>
       <h2 class='nom_produit'> "<?php echo $produits[$compteur]["nom_produit"];?>" </h2>
