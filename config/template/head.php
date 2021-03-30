@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">
     <!-- Font awsome -->
     <script src="https://kit.fontawesome.com/f25e2f6a6c.js" crossorigin="anonymous"></script>
+    <!-- FavIcon -->
+    <link rel="icon" type="image/png" sizes="52x52" href="Projet_BE/asset/style/img/fav_icon.png">
     <!-- Ressource JS -->
     <script
       defer
