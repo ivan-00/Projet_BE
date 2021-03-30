@@ -1,0 +1,71 @@
+@media all and (max-device-width: 667px) {
+  nav {
+    width: 800px;
+  }
+  nav .nav-logo {
+      font-family: "roboto", sans-serif;
+      font-size: 30px;
+      font-weight: bolder;
+      color: #10331c;
+      padding-bottom: 20px;
+    }
+    nav form {
+      width: 720px;
+      height: 40px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav form input {
+      width: 100%;
+      border: none;
+      border-radius: 10px 0 0 10px;
+      padding-left: 30px;
+      background-color: #c9c9c9;
+      display:none;
+    }
+    nav form button {
+      border: none;
+      background-color: #c9c9c9;
+      border-radius: 0 10px 10px 0;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      margin-left: 300px;
+    }
+    nav .nav-item {
+      display:none;
+    }
+    nav .nav-compte {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+              position: fixed;
+      margin-left: 550px; 
+    }
+    .breadcrumb {
+      margin: 20px 0 20px 0;
+      padding-left: 10px;
+    }
+    h2 {
+      padding-left: 5px;
+    }
+
+    footer {
+      width: 800px; 
+      padding-right: 100px;
+    }
+
+    .footer_left {
+      margin-right: 50px;
+    }
+
+    .footer_center {
+      margin-right: 50px;
+    }
+}
