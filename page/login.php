@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 require '../config/init.php';
 
@@ -9,8 +8,10 @@ if(isset($_POST['forminscription']))
 {
     $lastname = htmlspecialchars($_POST['lastname']);
     $name = htmlspecialchars($_POST['name']);
-    $password = sha1($_POST['password']);
-    $confirm_password = sha1($_POST['confirm_password']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+    $password = password_hash($password, PASSWORD_DEFAULT);
+    $confirm_password = mysqli_real_escape_string($con, $_POST['confirm_password']);
+    echo ($password);
     $email = htmlspecialchars($_POST['email']);
     $phone = htmlspecialchars($_POST['phone']);
     $dept = htmlspecialchars($_POST['dept']);
@@ -68,7 +69,9 @@ if(isset($_POST['forminscription']))
 if (isset($_POST['formeconection']))
 {
     $emailconnect = htmlspecialchars($_POST['emailconnect']);
-    $mdpconnect = sha1($_POST['mdpconnect']);
+    $mdpconnect = mysqli_real_escape_string($con, $_POST['mdpconnect']);
+    $mdpconnect = password_hash($password, PASSWORD_DEFAULT);
+
         if(!empty($emailconnect) AND !empty($mdpconnect))
         {
             $requser = $bdd->prepare("SELECT * FROM membre WHERE email = ? AND pass_md5 = ?");
@@ -177,14 +180,28 @@ if (isset($_POST['formeconection']))
             <div class="input">
                 <label for="dept">Département:</label>
                 <select name="dept" id="">
-                    <option value="1">--Choisir un département--</option>
-                    <option value="2">--PARIS--</option>
+                <?php
+                $request = $bdd->query("SELECT * FROM departement ");
+                $departement = $request->fetchAll();
+                
+                foreach ($departement as $dpt)
+                // $dpt = ligne de tableau []
+                // appeler la  variable (.$name[].)  
+                // departement [
+                //     $dpt
+                //     $dpt
+                //     $dpt
+                // ]
+                {   
+                    echo ("<option value='".$dpt['departement_code']."'>".$dpt['departement_nom']."</option>");
+                }
+                ?>
                     <!-- https://blog.ludikreation.com/utile-tableaux-php-des-regions-et-departements-de-france/  -->
                 </select>
             </div>
             <div class="input">
                 <label for="password"  >Mot de passe: *</label>
-                <input name="password" pattern=".[a-zA-Z0-9]{10,}" type="password">
+                <input name="password" type="password">
             </div>
             <div class="input">
                 <label for="phone">Numéro de téléphone: *</label>

@@ -1,5 +1,4 @@
 <?php
-session_start();
 require '../config/init.php';
 ?>
 <?php include '../config/template/head.php'; ?>
@@ -48,7 +47,16 @@ if(isset($_SESSION['id']))
       $msg = "Votre mot de passe ne correspondent pas.";
     }
   // .................... FONCTIONNE PAS ..............................
-  }
+}
+?>
+<?php
+function updateProfil($bdd) {
+  $newdpt = htmlspecialchars($_POST['departement']);
+  $updateNewDpt = $bdd->prepare("UPDATE membre SET departement = ? WHERE id = ?");
+  $updateNewDpt->execute(array($newdpt, $_SESSION['id']));
+
+  echo('Je me suis exécuté ');
+}
 ?>
 <div class="banner banner_profil">
   <h1>Mon profil</h1>
@@ -57,7 +65,7 @@ if(isset($_SESSION['id']))
     <article>
       <h2>Edition de mon profil</h2>
       <hr>
-        <form method="POST" action="" class="form-edit_profil">
+        <form method="POST" action="<?php echo("Hello Ivan") ?>" class="form-edit_profil">
           <div class="edit_section">
             <label for="name">Votre Nom:</label>
             <input  id="name" type="text" name="newname" placeholder="Votre nouveau nom" value="<?php echo $user["nom"];?>">
@@ -83,14 +91,28 @@ if(isset($_SESSION['id']))
           <div class="edit_section">
             <label for="">Département</label>
             <select name="newdpt" id="dpt">
-              <option value="1">--Choisir un départment--</option>
-              <option value="2">Paris</option>
-              <option value="3">La lune</option>
+                <?php
+                $request = $bdd->query("SELECT * FROM departement ");
+                $departement = $request->fetchAll();
+
+                // $dpt = ligne de tableau []
+                // appeler la  variable (.$name[].)  
+                // departement [
+                //     $dpt
+                //     $dpt
+                //     $dpt
+                // ]
+                foreach ($departement as $dpt)
+                {   
+                    echo ("<option value=".$dpt['departement_code'].">". $dpt['departement_code'] . ' ' . $dpt['departement_nom'] ."</option>");
+                }
+                ?>
             </select>
           </div>
             <input class="submit" type="submit" value="Mettre à jour mon profil">
             <?php
           if (isset($msg)){ echo "<div class='erreur_connect'>". $msg."</div>";} ?>
+
         </form>
     </article>
   </section>

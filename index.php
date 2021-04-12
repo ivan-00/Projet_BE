@@ -1,5 +1,4 @@
 <?php
-session_start();
 require './config/init.php';
 ?>
 <?php include 'config/template/head.php'; ?>
